@@ -1,0 +1,82 @@
+<div class="container ngx-audioplayer py-2 fixed-bottom" fxHide.lt-md="true">
+        <div class="media-footer row">
+          <div class="text-white col-2 text-center pt-3"> <p> {{ currentFileName}}</p> </div> 
+          <div class="col-5">  
+          <mat-toolbar color="primary">
+                <mat-toolbar-row class="media-action-bar text-center justify-content-center align-items-center ">
+                        <button mat-button >
+                                <mat-icon mat-list-icon> shuffle</mat-icon>
+                              </button>
+                        <button mat-button [disabled]="isFirstPlaying()" (click)="previous()">
+                          <mat-icon mat-list-icon>skip_previous</mat-icon>
+                        </button>
+                        <button mat-button (click)="play()" [disabled]="state?.error" *ngIf="!state?.playing">
+                          <mat-icon mat-list-icon>play_circle_filled</mat-icon>
+                        </button>
+                        <button mat-button (click)="pause()" *ngIf="state?.playing">
+                          <mat-icon mat-list-icon>pause</mat-icon>
+                        </button>
+                        <button  mat-button [disabled]="isLastPlaying()" (click)="next()">
+                          <mat-icon mat-list-icon>skip_next</mat-icon>
+                        </button>
+                        <button mat-button (click)="repeat()" >
+                                <mat-icon mat-list-icon> repeat</mat-icon>
+                              </button>
+                </mat-toolbar-row>
+            <mat-toolbar-row>
+               {{ state?.readableCurrentTime }} 
+               <mat-slider class="time-slider w-100" min="0" [max]="state?.duration" step="1" [value]="state?.currentTime" (input)="onSliderChangeEnd($event)" [disabled]="state?.error || currentFile.index === undefined"></mat-slider>
+               {{ state?.readableDuration }} 
+            </mat-toolbar-row>
+           
+          </mat-toolbar>
+        </div> 
+        <div class="col-2" > 
+                 
+           <button (click)="showplayList()" class="bg-transparent btn border-left">  
+                <mat-icon class="playlist-icon" svgIcon="icon_postuler"> </mat-icon> <span class="text-white  "> Postuler </span>
+            </button>
+            </div>
+        <div class="col-3" > 
+            <button mat-button (click)="mute()" class="border-left d-inline-block">
+                 <mat-icon class="text-white"  *ngIf="val" mat-list-icon> volume_up</mat-icon>
+                 <mat-icon class="text-white" *ngIf="!val" mat-list-icon> volume_off</mat-icon>
+            </button>
+         <mat-slider class="volume-slider w-50" min="0" [max]="1"  step=".1" [value]="state?.volume" (input)="onVolumeChangeEnd($event)"></mat-slider>
+         
+        </div>
+    </div>
+        <div class="content" *ngIf="showplaylist">
+                
+                <mat-list color="primary">
+                  <p class="d-flex justify-content-between align-items-center px-4">  <span class="left">
+                        <mat-form-field class="example-form-field">
+                                <mat-label class="text-white">Rechercher</mat-label>
+                                <input matInput type="text" [(ngModel)]="value">
+                              </mat-form-field>
+                              </span>
+                              <span class="right">
+                                    <mat-icon (click)="showplayList()" class="text-white"  >keyboard_arrow_up</mat-icon>
+                              </span>
+                  </p>
+                  <p class="d-flex justify-content-between align-items-center px-5">
+                       <span class="d-flex text-white"> Postes à pourvoir</span>
+                        <span class="d-flex text-white"> Statut</span> 
+                         <span class="d-flex text-white"> Secteurs</span> 
+                          <span class="d-flex text-white">Entreprises</span> 
+                           <span class="d-flex text-white">Lieux</span>
+                            <span class="d-flex text-white">Temps</span>
+                        </p>
+                  <mat-list-item *ngFor="let file of files; let i = index" (click)="openFile(file, i)">
+                    <mat-icon class="text-white" mat-list-icon>play_arrow</mat-icon>
+                    <h4  class="text-white d-inline" mat-line> <span>  {{ file.name }}</span> <span>  {{ file.artist }} </span></h4>
+                      
+                    <mat-icon class="text-white"  >favorite_border</mat-icon>
+                    <mat-icon class="text-white"  >keyboard_arrow_right</mat-icon>
+                    <h6 *ngIf="currentFile.index === i && state?.error">ERROR</h6>
+                    <mat-divider></mat-divider>
+                  </mat-list-item>
+                </mat-list>
+            
+              </div>
+    </div>

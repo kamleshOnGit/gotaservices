@@ -1,0 +1,41 @@
+<svg id="picto_audio_small" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a0ecab"/>
+      <stop offset="1" stop-color="#73c59c"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_9715" data-name="Groupe 9715">
+    <circle id="Ellipse_17566" data-name="Ellipse 17566" cx="19" cy="19" r="19" fill="url(#linear-gradient)"/>
+    <g id="Groupe_10042" data-name="Groupe 10042" transform="translate(9.699 9.621)">
+      <g id="Volume" transform="translate(6.264 6.691)">
+        <path id="Volume-2" data-name="Volume" d="M9.549,9.183a4.467,4.467,0,0,0,0-6.175l.476-.479a4.971,4.971,0,0,1,0,7.124ZM7.78,7.4a1.872,1.872,0,0,0,0-2.613l.476-.479a2.594,2.594,0,0,1,0,3.561Z" transform="translate(-7.78 -0.748)" fill="#fff"/>
+        <path id="Volume-3" data-name="Volume" d="M13.785,10.276a6.81,6.81,0,0,0,0-9.737l.479-.479a7.524,7.524,0,0,1,0,10.685Z" transform="translate(-10.25 -0.059)" fill="#fff"/>
+      </g>
+      <g id="Groupe_10041" data-name="Groupe 10041">
+        <g id="headphones">
+          <g id="Groupe_9678" data-name="Groupe 9678" transform="translate(0 0)">
+            <g id="Groupe_9677" data-name="Groupe 9677">
+              <path id="Tracé_997" data-name="Tracé 997" d="M1.6,40.357c0-.108-.008-.217-.008-.326a8.027,8.027,0,1,1,16.053,0c0,.109,0,.218-.008.326a2.706,2.706,0,0,1,1.6,2.464v2.4a2.707,2.707,0,0,1-2.7,2.7v.6a.3.3,0,0,1-.3.3h-1.2a.3.3,0,0,1-.3-.3V39.515a.3.3,0,0,1,.3-.3h.836a6.329,6.329,0,0,0-12.49,0h.836a.3.3,0,0,1,.3.3v9.014a.3.3,0,0,1-.3.3H3a.3.3,0,0,1-.3-.3v-.6a2.707,2.707,0,0,1-2.7-2.7v-2.4A2.706,2.706,0,0,1,1.6,40.357Zm14.929,6.971a2.106,2.106,0,0,0,2.1-2.1v-2.4a2.106,2.106,0,0,0-2.1-2.1Zm-1.2-7.512v8.413h.6V39.816ZM3.305,48.229h.6V39.816h-.6Zm-.573-8.837a6.936,6.936,0,0,1,13.766,0,.3.3,0,0,1,.028.123v.14q.019.23.024.462a2.691,2.691,0,0,1,.488.049c0-.046,0-.09,0-.136a7.426,7.426,0,0,0-14.851,0c0,.046,0,.09,0,.136a2.693,2.693,0,0,1,.488-.05q0-.233.024-.462v-.139A.3.3,0,0,1,2.732,39.392ZM.6,45.224a2.106,2.106,0,0,0,2.1,2.1v-6.61a2.106,2.106,0,0,0-2.1,2.1Z" transform="translate(0 -32.004)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Groupe_9680" data-name="Groupe 9680" transform="translate(17.126 12.469)">
+            <g id="Groupe_9679" data-name="Groupe 9679">
+              <path id="Tracé_998" data-name="Tracé 998" d="M40.3,364a.3.3,0,0,1,.3.3v.3a.3.3,0,1,1-.6,0v-.3A.3.3,0,0,1,40.3,364Z" transform="translate(-40 -363.996)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Groupe_9682" data-name="Groupe 9682" transform="translate(17.126 11.267)">
+            <g id="Groupe_9681" data-name="Groupe 9681">
+              <path id="Tracé_999" data-name="Tracé 999" d="M40.3,332a.3.3,0,0,1,.3.3v.3a.3.3,0,1,1-.6,0v-.3A.3.3,0,0,1,40.3,332Z" transform="translate(-40 -331.996)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Groupe_9684" data-name="Groupe 9684" transform="translate(17.126 10.065)">
+            <g id="Groupe_9683" data-name="Groupe 9683">
+              <path id="Tracé_1000" data-name="Tracé 1000" d="M40.3,300a.3.3,0,0,1,.3.3v.3a.3.3,0,0,1-.6,0v-.3A.3.3,0,0,1,40.3,300Z" transform="translate(-40 -299.996)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,475 @@
+.container {
+    width: 100%;
+    top: 0;
+    font-family: Montserrat, Montserrat, sans-serif
+}
+
+@media screen and (max-width:1500px) {
+    .container {
+        width: 100%
+    }
+}
+
+.homepage-header {
+    background: linear-gradient(90deg, var(--color-primaryDark) 0, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+    height: 200px
+}
+.gotaf-app {
+    padding-top: 1.5%
+}
+.gotaf-app .gotaf-app-icon {
+    width: 101.708px;
+    height: 32.159px;
+    left: 0;
+    top: 0;
+    overflow: visible;
+    fill: #000;
+    border-radius: 10px
+}
+.gotaf-app .gotaf-app-icon:nth-child(1) {
+    margin-right: 2%
+}
+.header-right img {
+    max-width: 100%;
+    max-height: 100%
+}
+.paginator a {
+    color: var(--color-primary)
+}
+.play-icon {
+    position: absolute;
+    right: 31%;
+    top: 4%
+}
+.play-icon .mat-icon {
+    width: 8em;
+    height: 6em
+}
+.content-center {
+    width: 100%;
+    margin: auto;
+    text-align: center
+}
+.jobsNumber {
+    color: var(--color-tertiary);
+    overflow: visible;
+    font-style: normal;
+    font-size: 58px;
+    font-weight: 700
+}
+
+.jobsNumberText {
+    color: var(--color-tertiary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px
+}
+
+
+
+.categorie-row {
+    padding-top: 2em
+}
+
+.mat-input-element {
+    background: #fff
+}
+
+.search {
+    padding-top: 1em;
+    display: inline-block;
+    width: 100%
+}
+
+.search-form-field {
+    margin-right: 3em;
+    width: 365px;
+    position: relative
+}
+
+.mat-form-field-suffix {
+    position: absolute;
+    right: 20px;
+    top: 28px
+}
+
+.town-form-field {
+    width: 288px;
+    position: relative
+}
+
+.town-form-field .mat-form-field-suffix {
+    position: absolute;
+    right: 20px;
+    top: 10px
+}
+
+.search input {
+    border-radius: 25px;
+    box-shadow: 0 3px 2px #3b3e4e45;
+    border: 2px solid #fff;
+    padding: 24px 56px;
+    height: 0
+}
+
+.search input:focus,
+.search input:hover {
+    border: 2px solid var(--color-secondary)
+}
+
+.search-icon .mat-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px
+}
+
+.audio {
+    top: 70%;
+    padding-top: 20em;
+    display: inline-block;
+    width: 100%
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    height: 50px
+}
+
+.form-conent {
+    position: relative
+}
+
+.form-conent .icon-before {
+    position: absolute;
+    left: 20px;
+    top: 31px;
+    width: 30px
+}
+
+.form-conent .icon-after {
+    position: absolute;
+    right: 15px;
+    top: 31px
+}
+
+.form-conent:nth-child(1) .icon-after {
+    right: 30px
+}
+
+.paginator .mat-grid-list {
+    padding-bottom: 50px !important
+}
+
+.jobsNumberFound {
+    color: var(--color-tertiary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px
+}
+
+.filters {
+    margin-top: 2em
+}
+
+.filters button {
+    border-radius: 36px;
+    font-family: Montserrat, Montserrat, sans-serif;
+    background-color: #fff;
+    color: var(--color-tertiary);
+    box-shadow: 0 5px 5px #3b3e4e45;
+    margin: 1.5em;
+    padding: 14px 46px;
+    border: solid 4px transparent
+}
+
+.filters button:focus {
+    border: solid 4px var(--color-secondary);
+    background-color: #fff
+}
+
+.filters button:active,
+.filters button:hover {
+    border: solid 4px var(--color-secondary);
+    background-color: #fff
+}
+
+.filters button mat-icon {
+    margin-right: 1em
+}
+
+.filters:first-child button {
+    width: 210px;
+    height: 52px
+}
+
+.content {
+    flex-flow: column wrap
+}
+  
+
+.mat-toolbar-multiple-rows {
+    height: 50px !important
+}
+ 
+
+.postuler {
+    border-radius: 30px;
+    font-family: Montserrat, Montserrat, sans-serif;
+    background: linear-gradient(90deg, var(--color-primaryDark) 0, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+    color: #fff
+}
+
+.postuler mat-icon {
+    margin-right: 1em
+}
+
+.save-icon {
+    padding-top: 1em;
+    width: 52px;
+    height: 52px
+}
+
+.paginator {
+    width: 100%
+}
+
+.playerDiv {
+    width: 100%;
+    margin: 40px auto
+}
+
+.player {
+    fill: var(--color-primary);
+    width: 100%
+}
+ 
+
+.navbar-spacer {
+    flex: 1 1 auto
+}
+
+.footer-toolbar-row {
+    position: relative;
+    height: 130px;
+    background: var(--color-primaryLighter);
+    padding: 0 10%
+}
+
+.left-navbar-bloc {
+    font-family: Montserrat, Montserrat, sans-serif;
+    color: var(--color-tertiary);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px
+}
+
+.right-navbar-bloc .mat-icon {
+    width: 50px;
+    height: 40px;
+    margin: 0 1%
+}
+.swipe-icon{ display:none}
+
+@media(max-width:1024px) {
+    .search .form-conent:first-child {
+        margin-left: 11.666667% !important
+    }
+    .search-form-field {
+        width: 305px
+    }
+    .search .form-conent:nth-child(2) {
+        max-width: 30% !important;
+        flex: 0 0 30%;
+        margin-left: 20px
+    }
+    .search .form-conent:nth-child(2)+div {
+        margin-left: 20px
+    }
+    .filters button {
+        padding: 12px 35px
+    }
+    .header-right img {
+        width: 100%
+    }
+}
+
+@media (max-width:1000px) {
+    .play-icon {
+        right: 20%;
+        top: 7%
+    }
+    .play-icon .mat-icon {
+        width: 8em;
+        height: 8em
+    }
+    .footer-toolbar-row {
+        flex-direction: column;
+        padding: 20px;
+        height: 146px;
+        background: rgb(214 218 230 / .2)
+    }
+    .left-navbar-bloc {
+        margin-bottom: 16px
+    }
+    
+    .search .form-conent:first-child {
+        margin-left: 8.666667% !important
+    }
+    
+    
+    .search-form-field,
+    .town-form-field {
+        width: 90%;
+        margin: 0;
+        margin: auto
+    }
+    .form-conent .icon-before {
+        left: 10%
+    }
+    .form-conent .icon-after {
+        right: 10%
+    }
+    .filters button {
+        padding: 14px 20px;
+        width: 80%;
+        display: none
+    }
+    .search-icon {
+        display: none
+    }
+    
+    .category-audio-icon {
+        top: 91%;
+        width: 50px;
+        height: 50px
+    }
+     
+    @keyframes mymove {
+        0%   {right: -3px; color: #a7bdb9;}
+        25%  {right: 4px; color:#5f998f;}
+        50%  {right: 10px; color:#458076;}
+        75%  {right: 15px; color:#2f776b;}
+        100% {right: 20px; color: #126154;}
+      }
+    .swipe-icon{display:block; position: absolute;
+        right: -3px;
+        color: #458076;
+        top: 50%;
+        font-size:36px;
+        animation: mymove 2s infinite cubic-bezier(0.63, 0.61, 0.35, 0.32);;
+    }
+    .swiper-div { position: relative;
+        height: 100%;
+        top: 138px;
+        z-index: 999;}
+    .homepage-header{ display:block!important}
+}
+
+@media(max-width:766px) {
+    .search .form-conent:first-child {
+        margin-left: 0 !important
+    }
+    .search .form-conent:nth-child(2) {
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        margin-left: 0
+    }
+    .form-conent:nth-child(1) .icon-after {
+        right: 10%
+    }
+     
+    
+    
+    .category-audio-icon {
+        width: 36px;
+        height: 36px
+    }
+    .play-icon .mat-icon {
+        width: 5em;
+        height: 5em
+    }
+    .play-icon {
+        top: 4%
+    }
+    .app-link {
+        background: #42475e;
+        padding: 10px
+    }
+    .jobsNumber {
+        font-weight: 400;
+        font-size: 20px;
+        margin-right: 10px
+    }
+    .jobsNumberText {
+        font-size: 20px
+    }
+    .paginator .mat-grid-tile {
+        padding-bottom: 20px
+    }
+    .swiper-div { 
+        top: 128px;
+       }
+}
+
+@media(max-width:500px) {
+     
+   
+    .mat-form-field-wrapper {
+        padding-bottom: 10px !important
+    }
+     
+    .postuler .mat-icon {
+        height: 16px;
+        width: 16px
+    }
+    .postuler {
+        line-height: 28px;
+        margin-top: 3px
+    }
+    
+    .container {
+        padding: 8px
+    }
+    .right-navbar-bloc .mat-icon {
+        width: 42px;
+        height: 35px;
+        margin: 0 1%
+    }
+    .left-navbar-bloc {
+        font-size: 13px;
+        text-align: center !important
+    }
+    .search .form-conent:nth-child(2) {
+        margin-top: -22px
+    }
+     
+    .swiper-div { 
+        top: 108px;
+       }
+    .swipe-icon{ font-size:26px}
+}
+
+@media(max-width:400px) {
+     
+    .postuler {
+        font-size: 12px
+    }
+     
+    
+    .jobsNumber {
+        font-size: 18px;
+        margin-right: 6px
+    }
+    .jobsNumberText {
+        font-size: 18px
+    }
+    .swiper-div { 
+        top: 88px;
+       }
+       .title{
+        padding-left: 7px;
+        margin-top: -18px;
+        padding-right: 1px;
+    }
+}
+ 

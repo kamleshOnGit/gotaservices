@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Montserrat, sans-serif;
+
+
+--color-primary: #73c59c;
+--color-primaryLight: #95e6a9;
+--color-primaryLighter: #ebf1f0;
+--color-primaryDark: #458076;
+--color-primaryInactive: #bbedc2;
+
+--color-secondary: #F1CE49;
+/*--color-secondaryLight: #95E6A9*/
+--color-secondaryDark: #E8A144;
+/*--color-secondaryInactive: #BBEDC2;*/
+
+--color-tertiary: #42475E;
+--color-homepage-title: #03334F;
+/*--color-tertiaryLight: #95E6A9*/
+/*--color-tertiaryDark: #458076;*/
+/*--color-tertiaryInactive: #BBEDC2;*/
+
+  --grid-breakpoints-xs: 0;
+  --grid-breakpoints-sm: 576px;
+  --grid-breakpoints-md: 768px;
+  --grid-breakpoints-lg: 992px;
+  --grid-breakpoints-xl: 1200px;
+
+}
+
+/*user login page*/
+.user-connection-type .mat-radio-container {
+  display: none !important;
+}
+
+
+.mat-login-input .mat-form-field-wrapper {
+  width: 20em;
+}
+
+/*homepage*/
+.navbar-title span{
+  left: 189px;
+  top: 87px;
+  width: 244px;
+  white-space: nowrap;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1;
+  color:#fff;
+}
+
+.time-slider  .mat-slider-track-fill {background-color:#FFBD07!important}
+ .volume-slider  .mat-slider-track-fill {background-color:white!important}
+ .mat-accent .mat-slider-thumb,
+ .mat-accent .mat-slider-thumb-label {background-color:transparent!important}
+
+.negorder{position: absolute!important;
+  right: 0%!important;}
+.playlistbg {background:#458076}
+.mat-icon svg { vertical-align: top!important}
+.ngx-audioplayer  .mat-icon svg { color:#fff!important}
+.ngx-audioplayer .mat-card{ color:#fff!important; font-family: Montserrat, sans-serif}
+.mat-body p, .mat-body-1 p, .mat-typography p , .mat-input-element ,.navbar-title span, .jobsNumberText {  font-family: Montserrat, sans-serif}
+
+
+
+/*.mat-form-field {*/
+/*  border-radius: 30px;*/
+/*}*/
+
+/*.mat-form-field-appearance-outline .mat-form-field-flex {*/
+/*  border: solid 1px var(--color-tertiary);*/
+/*}*/
+/*.mat-form-field-appearance-outline .mat-form-field-outline {*/
+/*  display: none;*/
+/*}*/

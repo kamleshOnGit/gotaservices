@@ -1,0 +1,16 @@
+<div class="category-row row">
+     
+    <div  class="bloc-category" >
+      <div  fxFlex="20%" fxFlex.xs="35%" fxFlex.sm="50%" fxFlex.md="20%"  class="bloc-mat-tile" *ngFor="let jobCategory of jobCategories , key">
+        <button class="mt-sm-0" mat-button routerLink='job-category/{{jobCategory.id}}'>
+          <p> {{ jobCategory.name }} </p>
+          <mat-icon [svgIcon]="jobCategory.image"></mat-icon>
+        </button>
+       
+          <img class="category-audio-icon" (click)="playAudio(jobCategory.name, jobCategory.audio)"  src="assets/image/picto_audio_medium.png" >
+        
+      </div>
+    </div>
+   
+  </div>
+  

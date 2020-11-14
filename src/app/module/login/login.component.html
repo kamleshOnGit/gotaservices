@@ -1,0 +1,73 @@
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <img alt="LoginSideImage" mat-card-image src="assets/image/login_left.jpg" class="login-left">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+        <ng-form [formGroup]="loginForm" class="login-form">
+          <mat-icon svgIcon="gotaf_color" class="login-logo"></mat-icon>
+          <p>Vous êtes à 2 clics du job de vos rêves</p>
+
+          <div class="user-connection-type">
+            <mat-radio-group class="user-connection-type-selected" aria-label="Select an option">
+              <mat-radio-button value="1">
+                <button class="default-button-style button-type" mat-stroked-button>Je suis une entreprise</button>
+              </mat-radio-button>
+
+              <mat-radio-button value="2">
+                <button class="default-button-style button-type" mat-stroked-button>Je recherche un emploi</button>
+              </mat-radio-button>
+            </mat-radio-group>
+
+<!--            <mat-button-toggle-group class="user-connection-type" name="fontStyle" aria-label="Font Style">-->
+<!--              <mat-button-toggle class="default-button-style button-type" value="0">-->
+<!--                Je suis une entreprise-->
+<!--              </mat-button-toggle>-->
+<!--              <mat-button-toggle class="default-button-style button-type" value="1">-->
+<!--               Je recherche un emploi-->
+<!--              </mat-button-toggle>-->
+<!--            </mat-button-toggle-group>-->
+          </div>
+
+          <mat-form-field appearance="none" class="mat-login-input">
+            <input class="login-input" matInput (keyup.enter)="loginApi()" placeholder="Login" formControlName="login">
+            <mat-error *ngIf="loginForm.controls.login.invalid">{{getErrorMessageLogin()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="none" class="mat-login-input">
+            <input class="login-input" matInput (keyup.enter)="loginApi()" placeholder="Mot de passe" type="password" formControlName="password">
+            <mat-error *ngIf="loginForm.controls.password.invalid">{{getErrorMessagePassword()}}</mat-error>
+          </mat-form-field>
+          <div>
+            <mat-grid-list class="rememberBtn" cols="2" rowHeight="30px">
+              <mat-grid-tile>
+                <mat-checkbox>Se souvenir de moi</mat-checkbox>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <a href="#">Mot de passe oublié</a>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+          <br>
+          <p>S'inscrire avec</p>
+          <div class="row">
+              <button class="default-button-style google" mat-button>
+                <mat-icon class="social-connect" svgIcon="google"></mat-icon>
+              </button>
+              <button class="default-button-style facebook" mat-button>
+                <mat-icon class="social-connect" svgIcon="facebook"></mat-icon>
+              </button>
+          </div>
+          <div class="row">
+              <button class="default-button-style login-register" mat-button>M'inscrire chez Gotaf</button>
+             <button class="default-button-style login-connect" (click)="loginApi()" [disabled]="disabled" mat-button>Je me connecte</button>
+          </div>
+          <div class="row last-line">
+            <u><a href="">Continuer sans compte</a></u>
+          </div>
+          <div class="row">
+            <a href="#">Conditions d'utilisation</a>
+          </div>
+        </ng-form>
+  </mat-grid-tile>
+<mat-icon class="audio-icon" svgIcon="audio"></mat-icon>
+</mat-grid-list>

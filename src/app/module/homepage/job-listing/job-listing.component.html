@@ -1,0 +1,33 @@
+<div fxLayout="row wrap" fxLayoutGap fxFlexFill fxLayoutAlign="center top"> 
+<div class="jobs" fxFlex="25%" fxFlex.xs="50%" fxFlex.sm="48%" fxFlex.md="25%" *ngFor="let job of jobs">
+    <mat-card class="job-card">
+      <img mat-card-image src="{{ job.image }}" alt="Job image" class="mat-card-image">
+      <mat-card-content class="job-card-content">
+        <div class="job-actions">
+          <mat-grid-list class="title" cols="3">
+            <mat-grid-tile class="title-tile" [colspan]="2">
+              <div class="row" style="height: 60px">
+                <a routerLink="job/{{job.id}}" class="col-12"><p class="job-title">{{ job.name }}</p></a>
+                <p class="col-12" style="font-size: 8px;margin-left: 18px;">CDI - BORDEAUX</p>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <img class="job-audio-icon" src="assets/image/picto_audio_medium.png" (click)="playAudio(job.name, job.audio)">
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+        <div class="job-detail">
+          <div class="title">
+            <a routerLink="job/{{job.id}}"><p class="job-title">{{ job.name }}</p></a>
+            <p style="font-size: 8px">CDI - BORDEAUX</p>
+            <p class="job-title">{{ job.salary }} <span *ngIf="job.salary > 100">€/mois</span> <span *ngIf="job.salary < 100">€/heure</span> </p>
+         
+            <p class="job-mission"> {{ job.mission }} </p>
+            
+            <button mat-button class="postuler" routerLink="job-application/{{job.id}}"> <mat-icon svgIcon="icon_postuler"></mat-icon> Postuler </button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

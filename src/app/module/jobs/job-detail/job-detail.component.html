@@ -1,0 +1,121 @@
+<div class="container py-6">
+  <div class="row">
+    <div class="col-md-6 mb-5">
+      <div class="row">
+        <div class="col-5">
+          <img [src]="model.image" alt="image" class="img-fluid rounded">
+        </div>
+        <div class="col-7 pl-4 pr-0">
+          <div class="row mb-2 bg-light rounded py-2 align-items-center">
+            <div class="col-6">
+              <img [src]="model.image" alt="logo" class="img-fluid" width="100">
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <span class="fa-stack fa-xs">
+                <mat-icon class="text-primary">facebook</mat-icon>
+                <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i> -->
+              </span>
+              <span class="fa-stack fa-xs">
+                <mat-icon class="text-info">facebook</mat-icon>
+                <i class="fas fa-circle fa-stack-2x text-info"></i>
+                <!-- <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i> -->
+              </span>
+            </div>
+          </div>
+          <div class="row mb-3 no-gutters">
+            <div class="col-9">
+              <h4 class="mb-0">{{model.name}} <small class="font-weight-bold">{{model.jobType}}</small></h4>
+              <small>{{model.address}}</small>
+            </div>
+            <div class="col-3">
+              <h4 class="mb-0">{{model.salary}}€</h4>
+              <p class="mb-0">net/mois</p>
+            </div>
+          </div>
+          <div class="row mb-3 align-items-center">
+            <div class="col-8">
+              <button class="button" style="text-align: center;">
+                <span class="fas fa-satellite-dish h3"> </span>
+                <strong style="font-weight: bold;">
+                  BTP
+                </strong>
+              </button>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+              <i class="fas fa-share-alt ml-3"></i>
+              <i class="far fa-heart ml-3"></i>
+            </div>
+          </div>
+          <audio controls class="mb-3">
+            <source [src]="model.audio" type="audio/mp3">
+          </audio>
+          <!-- <a href="#" class="btn btn-block btn-oval btn-success mb-3">
+            <mat-icon style="float: left;">home</mat-icon>
+            Candidature Simplifiée
+          </a> -->
+          <a href="#" class="btn btn-block btn-oval mb-3" style="background-color:#333242;">
+            <!-- <i class="fas fa-file-alt"></i>&nbsp;&nbsp; -->
+            <mat-icon style="float: left; color: white">sticky_note_2</mat-icon>
+            <span style="color: white;">Candidature simplifiée</span>
+          </a>
+          <a href="#" class="btn btn-block btn-oval btn-outline mb-3" style="background-color:#839994;;">
+            <!-- <i class="fas fa-phone fa-rotate-90"></i> -->
+            <mat-icon style="float: left;color: white">perm_phone_msg</mat-icon>
+            <span style="color: white;"> Contacter l'employeur</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 pl-lg-5 mb-5">
+      <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link fill-oval active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+            aria-controls="home" aria-selected="true"><i class="fas fa-city"></i>&nbsp; L'entreprise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fill-oval" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false"><i class="fas fa-search-plus"></i>&nbsp; Profil recherché</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fill-oval" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+            aria-controls="contact" aria-selected="false"><i class="fas fa-cogs"></i>&nbsp; Missions</a>
+        </li>
+      </ul>
+      <hr>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p>Reprehenderit pariatur repellendus convallis habitant euismod, ratione convallis, urna vestibulum, numquam!
+            Similique class doloremque dapibus? Repudiandae fuga purus ipsum nunc vestibulum perferendis distinctio
+            sagittis quasi urna veniam facere. Euismod assumenda, eum sociis quisquam nostra molestias morbi. Lobortis.
+            Parturient laboris, sed.</p>
+          <p>Ipsam proident in blanditiis primis. Officia doloremque condimentum expedita voluptas quae, ab? Aliqua
+            curabitur convallis diam proin elit odio, orci, donec labore. Explicabo iaculis, consectetuer! Integer
+            dolorum lorem! Ligula iusto quas modi ultrices blandit dictum porro! Nonummy accumsan.</p>
+          <a href="#" class="link-underline font-weight-bold">Voir toutes les offres proposées par Savelec</a>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <p>Sunt hac sequi adipisicing, cumque vestibulum ac officia dolorem fermentum veritatis, rerum, class aptent
+            diamlorem vulputate eligendi urna vehicula ac, wisi non platea vivamus voluptatibus natus nulla venenatis
+            accumsan ducimus delectus non! Commodo facilisi, feugiat adipisci, bibendum cumque non egestas deleniti
+            voluptatum et arcu? Ullamcorper molestie praesentium harum reiciendis quisquam.</p>
+          <p>Illo fusce aspernatur dolores tellus suscipit praesentium doloribus mus felis arcu gravida phasellus?
+            Provident iure eleifend malesuada laoreet, curae placeat sagittis nemo voluptatem massa, eum incididunt?
+            Quisque, augue rerum, dis, mattis habitasse sit ullamcorper dui nascetur impedit aperiam veniam fuga? Quo
+            reprehenderit repellat sagittis litora qui nascetur class nec rhoncus.</p>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <p>Eiusmod pretium risus habitasse sociosqu voluptatem sit? Etiam sapien hic tristique adipisci totam illum,
+            assumenda mollit nec, mi laudantium torquent! Nascetur! Iaculis. Orci.</p>
+          <ul>
+            <li>Molestiae nostrum aperiam fermentum eum</li>
+            <li>Ornare turpis eu officiis cupiditate.</li>
+            <li>Aut eos numquam vivamus netus placeat.</li>
+            <li>Officia fuga ullamco malesuada sociis.</li>
+            <li>Dolor nam urna dolorum mollitia ipsam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

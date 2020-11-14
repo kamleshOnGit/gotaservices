@@ -1,0 +1,329 @@
+  
+.jobsNumber {
+    color: var(--color-tertiary);
+    overflow: visible;
+    font-style: normal;
+    font-size: 58px;
+    font-weight: 700
+}
+
+.jobsNumberText {
+    color: var(--color-tertiary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px
+}
+
+
+ 
+
+.jobsNumberFound {
+    color: var(--color-tertiary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px
+}
+
+
+.jobs {
+    margin-top: 3em;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.job-card {
+    width: 100%;
+    box-shadow: 0 5px 5px #3b3e4e45;
+    border-radius: 30px;
+    height: 290px
+}
+
+.jobs:nth-child(2) .job-card,
+.jobs:nth-child(6) .job-card {
+    height: 340px
+}
+
+.jobs:nth-child(5),
+.jobs:nth-child(7),
+.jobs:nth-child(8) {
+    margin-top: -10px
+}
+
+.job-card img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px
+}
+
+.job-card a {
+    text-decoration: none;
+    color: var(--color-homepage-title);
+    cursor: pointer
+}
+
+.mat-card-image {
+    height: 230px;
+    transition: .5s ease;
+    backface-visibility: hidden
+}
+
+.jobs:nth-child(2) .job-card .mat-card-image,
+.jobs:nth-child(6) .job-card .mat-card-image {
+    height: 270px
+}
+
+.title-tile {
+    width: 13em !important
+}
+
+.job-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    margin-left: 18px;
+    margin-top: 10px
+}
+ 
+
+.job-detail .job-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    margin-left: 0;
+    margin-top: 0
+}
+
+.title {
+    line-height: 14px;
+    font-family: Montserrat, Montserrat, sans-serif;
+    color: var(--color-tertiary);
+    margin-top: -20px;
+    margin-right:10px 
+}
+
+.title .job-mission {
+    height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0 20px 0
+}
+
+.job-audio-icon {
+    width: 38px;
+    height: 38px;
+    margin-left: 40%;
+    cursor: pointer
+}
+
+.postuler {
+    border-radius: 30px;
+    font-family: Montserrat, Montserrat, sans-serif;
+    background: linear-gradient(90deg, var(--color-primaryDark) 0, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+    color: #fff
+}
+
+.postuler mat-icon {
+    margin-right: 1em
+}
+ 
+
+.job-detail {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 15%
+}
+
+.job-detail .title {
+    color: #fff
+}
+
+.job-card:hover .mat-card-image {
+    opacity: .3
+}
+
+.job-card:hover {
+    background: var(--color-tertiary) !important;
+    color: #fff
+}
+
+.job-card:hover .job-actions .title {
+    color: #fff;
+    padding-top: 0
+}
+
+.job-card:hover a {
+    color: #fff
+}
+
+.job-card:hover .job-detail {
+    opacity: 1
+}
+ 
+ 
+
+@media (max-width:1000px) {
+    
+    
+    .jobs:nth-child(2) .job-card .mat-card-image,
+    .jobs:nth-child(6) .job-card .mat-card-image {
+        height: 230px
+    }
+    .job-card,
+    .jobs:nth-child(2) .job-card,
+    .jobs:nth-child(6) .job-card {
+        height: 300px
+    }
+     
+    .jobs {
+        max-width: 42% !important
+    }
+    .title-tile {
+        width: 12em !important
+    }
+    .job-card .mat-card-content .job-actions .mat-grid-list p {
+        margin-left: 0 !important
+    }
+    
+    .jobs:nth-child(5),
+    .jobs:nth-child(7),
+    .jobs:nth-child(8) {
+        margin-top: 3em
+    }
+     
+}
+
+@media(max-width:766px) {
+    
+    .jobs {
+        max-width: 48% !important
+    }
+    
+    
+    . 
+    .jobsNumber {
+        font-weight: 400;
+        font-size: 20px;
+        margin-right: 10px
+    }
+    .jobsNumberText {
+        font-size: 20px
+    }
+    
+    
+}
+
+@media(max-width:500px) {
+    .jobs .job-card .mat-card-image,
+    .jobs:nth-child(2) .job-card .mat-card-image,
+    .jobs:nth-child(6) .job-card .mat-card-image {
+        height: 165px;
+        width: 100%;
+        margin: auto;
+        display: block
+    }
+    .job-card,
+    .jobs:nth-child(2) .job-card,
+    .jobs:nth-child(6) .job-card {
+        height: 240px
+    }
+    .jobs {
+        max-width: 50% !important
+    }
+    .job-detail {
+        top: 11%
+    }
+   
+    
+    .job-detail .title p {
+        margin: 2px
+    }
+    .job-detail .job-title {
+        margin-top: 0
+    }
+    .title .job-mission {
+        margin: 4px 0 4px 0
+    }
+    .postuler .mat-icon {
+        height: 16px;
+        width: 16px
+    }
+    .postuler {
+        line-height: 28px;
+        margin-top: 3px
+    }
+    .title-tile {
+        width: 14em !important;
+        text-align: center;
+        height: 72px;
+        padding: 40px 20px;
+        margin: auto !important
+    }
+    .jobs .job-card-content .title-tile+.mat-grid-tile {
+        overflow: visible !important;
+        position: absolute;
+        bottom: -69px;
+        left: 28% !important
+    }
+    .jobs {
+        padding: 0 4px
+    }
+    .job-card {
+        padding: 0 !important
+    }
+     
+    .title{ padding-left:10px;margin-top:-15px;padding-right:5px}
+     
+}
+
+@media(max-width:400px) {
+    .job-detail .title p {
+        font-size: 10px
+    }
+    .title-tile {
+        font-size: 12px;
+        width: 14em !important
+    }
+    .postuler {
+        font-size: 12px
+    }
+    .jobs .job-card .mat-card-image,
+    .jobs:nth-child(2) .job-card .mat-card-image,
+    .jobs:nth-child(6) .job-card .mat-card-image {
+        height: 165px
+    }
+    .job-card,
+    .jobs:nth-child(2) .job-card,
+    .jobs:nth-child(6) .job-card {
+        height: 230px
+    }
+    .job-detail {
+        padding: 4px 10px 0
+    }
+    .jobs .job-card-content .title-tile+.mat-grid-tile {
+        bottom: -64px
+    }
+    .job-title {
+        font-size: 11px
+    }
+    
+    .jobsNumber {
+        font-size: 18px;
+        margin-right: 6px
+    }
+    .jobsNumberText {
+        font-size: 18px
+    }
+
+       .title{
+        padding-left: 7px;
+        margin-top: -18px;
+        padding-right: 1px;
+    }
+}
+@media (max-width:350px){
+    .title-tile{
+        width:12em!important
+    }
+    .title{ padding-left:0px}
+}

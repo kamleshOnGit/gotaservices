@@ -1,0 +1,61 @@
+<footer *ngIf="!mobilefooter" class="footer">
+  <mat-grid-list cols="4" class="footer-bloc" rowHeight="12rem">
+    <mat-grid-tile class="bloc-mat-tile">
+      <a href=''><mat-icon svgIcon="gotaf" class="bottom-logo"></mat-icon></a>
+    </mat-grid-tile>
+    <mat-grid-tile class="bloc-mat-tile">
+      <div>
+        <h3>NOUS CONTACTER</h3>
+        <span>Rue des Terres Neuves<br>Bâtiment 16 - Côté Esplanade du Cirque<br>33130 Bègles<br>+33 (0)6 27 50 95 24</span>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="bloc-mat-tile">
+      <div>
+        <h3>NAVIGATION</h3>
+        <div class="navigation-links">
+          <span>Conditions générales de ventes<br>Mentions Légales<br>Aide</span>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="bloc-mat-tile">
+      <div>
+        <h3 style="margin-top: 3em;">NEWSLETTER</h3>
+        <div class="navigation-links">
+          <span>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Phasellus molestie,</span><br>
+          <mat-form-field appearance="none" class="email-form-field">
+            <input class="search-word" matInput placeholder="Email">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</footer>
+<footer *ngIf="mobilefooter" class="footer">
+  <div class="footer-bloc" fxLayout="column" fxLayoutAlign="center center" >
+
+      <div fxFlex="100%" class="text-center" fxLayout="column">
+          <h3 style="margin-top: 3em;">NEWSLETTER</h3>
+          <div class="navigation-links">
+            <span>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Phasellus molestie,</span><br>
+            <mat-form-field appearance="none" class="email-form-field">
+              <input class="search-word" matInput placeholder="Email">
+            </mat-form-field>
+          </div>
+        </div>
+
+
+    <div fxFlex="100%" fxLayout="row" >
+
+      <a href='' fxFlex="35" class="text-center"><mat-icon svgIcon="gotaf" class="bottom-logo"></mat-icon></a>
+     
+      <div fxFlex="75">
+        <div class="navigation-links">
+          <span>Conditions générales de ventes<br>Mentions Légales<br>Aide</span>
+        </div>
+      </div>
+    </div>
+    
+     
+    
+  </div>
+</footer>

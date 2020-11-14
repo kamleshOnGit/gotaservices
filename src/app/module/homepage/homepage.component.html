@@ -1,0 +1,135 @@
+
+ <div class="container-fluid p-0"> 
+ <div fxLayout="row nowrap" fxFlexFill fxLayoutAlign="space-between stretch" class="homepage-header">
+   
+    <div class="navbar-title h-auto"  fxFlexFill  fxFlex="66" fxFlexOffset="15" fxFlexAlign="stretch" fxLayoutAlign="center" fxShow="false" fxShow.gt-sm="true" fxShow.gt-lg="true">
+      <div class="inner justify-content-center align-items-start d-flex " fxLayout="column"    fxFill>
+      <span>Restez à l'écoute<br/>des offres d'emploi<br/>où que vous soyez</span>
+      <br>
+      <div class="gotaf-app d-flex " >
+        <a href="#" class="d-flex  ">
+          <mat-icon class="gotaf-app-icon" svgIcon="gotaf_apple_get"></mat-icon>
+        </a>
+        <a href="#" class="d-flex ">
+          <mat-icon class="gotaf-app-icon" svgIcon="gotaf_android_get"></mat-icon>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="header-right" fxFlex="1 1" fxHide.lt-lg="true" fxFlexFill fxLayoutAlign="end">
+      <img fxHide.sm="true" src="assets/image/gotaf-person/gotaf_nav_img.png">
+      
+    </div>
+    <img class="d-block d-lg-none w-100"  src="assets/image/gotaf-person/mobile-banner.jpg">
+    <a href="#"  class="play-icon" > <mat-icon  svgIcon="play"></mat-icon> </a>
+   
+  </div>
+</div>
+  <div class="container">
+  <div class="content-center">
+    <div class="mt-5 mb-lg-5">
+      <span class="jobsNumber d-inline d-md-block mb-3">2 656</span>
+      <span class="jobsNumberText d-inline d-md-block mb-3">emplois disponibles</span>
+    </div>
+    <p class="swiper-div"> <mat-icon class="swipe-icon"> touch_app</mat-icon></p>
+    <app-job-category-temp></app-job-category-temp>
+   
+    <div class="search">
+      <div class="row">
+        <div class="col-lg-4 mr-0 px-0 offset-lg-2 col-md-6 col-sm-12 form-conent"> 
+      <mat-form-field appearance="none" class="search-form-field">
+        <input class="search-word" matInput placeholder="Métiers, compétence, mot clé">
+      </mat-form-field>
+      <span class="icon-before"> <mat-icon svgIcon="icon_metier"></mat-icon></span>
+      <span class="icon-after"> <mat-icon matSuffix svgIcon="icon_micro" ></mat-icon></span>
+      
+      
+    </div>
+    <div class="col-lg-3 col-md-6 px-0 col-sm-12   form-conent">
+      <mat-form-field appearance="none" class="town-form-field">
+        <input class="search-town" matInput placeholder="Saisissez une ville">
+      </mat-form-field>
+      <span class="icon-before"> <mat-icon svgIcon="icon_localisation"></mat-icon></span>
+      <span class="icon-after"> <mat-icon matSuffix svgIcon="icon_micro" ></mat-icon></span>
+      
+    </div>
+      <div class="col-sm-1 ">
+      <a class="search-icon"  href="#"><mat-icon mat-button class="md-26" svgIcon="icon_search"></mat-icon></a>
+    </div>
+    </div>
+    </div>
+     
+    <div class="mt-3">
+      <span class="jobsNumberFound">Nous avons trouvé <br>8 annonces correspondantes à votre recherche</span>
+    </div>
+
+    <div class="filters">
+      <button mat-button> <mat-icon svgIcon="icon_tri"></mat-icon> Tri: plus récentes </button>
+      <button mat-button> <mat-icon svgIcon="icon_last_jobs"></mat-icon> Afficher annonces récentes </button>
+      <button mat-button> <mat-icon svgIcon="icon_map"></mat-icon> Voir la carte </button>
+    </div>
+
+    <div class="content"  fxLayout="row wrap" fxLayoutGap fxFlexFill fxLayoutAlign="center top" >
+      <app-job-listing></app-job-listing>
+      <div class="paginator">
+        <a href="#"><mat-icon class="save-icon" svgIcon="icon_save"></mat-icon></a>
+        <mat-grid-list cols="3" style="width: 10%; font-family: Montserrat; color: var(--color-primary); left: 45%; padding-top: 1em">
+          <mat-grid-tile>
+            <p><strong><a href="#">1</a></strong></p>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <p><a href="#">2</a></p>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <p><a href="#">3</a></p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="playerDiv">
+     <app-audio-player ></app-audio-player>
+  </div>
+</div>
+<div class="app-link" fxHide.md="true" fxHide.gt-xs="true" fxLayout="column">
+  <div fxFlex="100%" class="text-center"  fxFlex="100%">
+    <h2 class="text-white mt-3 mb-3"> Restez à l'écoute
+        des offres d'emploi
+        où que vous soyez</h2>
+  </div>
+  <div  class="text-center mb-3"  fxFlex="100%">
+      <img width="130"  src="assets/image/icon_App_Store.svg" />
+      <img width="130"  class="ml-2"  src="assets/image/icon_Google_Play.svg" />
+  </div>
+</div>
+
+
+  <mat-toolbar-row class="footer-toolbar-row" id="footerNav">
+    <div class="row" fxLayout>
+      <div class="left-navbar-bloc" style="text-align: left" fxFlex>
+        <span> Nous croyons dans le potentiel de chacun<br>Retrouvez-nous sur les réseaux sociaux</span>
+      </div>
+
+    </div>
+
+    <span class="navbar-spacer"></span>
+
+    <div class="row" fxLayout>
+
+      <div class="right-navbar-bloc" fxFlex fxLayoutAlign="flex-end center">
+        <a href="#"> <mat-icon svgIcon="icon_whatsapp"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_facebook"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_instagram"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_linkedin"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_twitter"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_youtube"></mat-icon></a>
+        <a href="#"> <mat-icon svgIcon="icon_spotify"></mat-icon></a>
+      </div>
+    </div>
+
+
+  </mat-toolbar-row>
+
+

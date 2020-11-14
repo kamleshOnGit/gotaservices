@@ -1,0 +1,47 @@
+
+.footer {
+  background: linear-gradient(90deg, #A0ECAB 0%, var(--color-primary));
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.footer-bloc {
+  color: white;
+  font-family: Montserrat, "Montserrat", sans-serif;
+}
+.footer-bloc span {
+  font-weight: lighter;
+}
+
+.email-form-field {
+  width: 250px;
+  color:#000;
+}
+.email-form-field input {
+  border-radius: 25px;
+  box-shadow: 0 5px 10px #3b3e4e45;
+  border: 2px solid white;
+  padding: 20px;
+  height: 0;
+  background-color: white;
+}
+
+.bottom-logo {
+  width: 14em;
+  height: 10em;
+  margin-top: -5em;
+  margin-left: -5em;
+}
+
+
+@media(max-width:1000px) {
+  .bottom-logo{ width:80%;height:auto ;margin:0px}
+  .email-form-field{ width:94%}
+  .email-form-field input{padding:12px}
+}
+
+@media(max-width:768px) {
+  .email-form-field input { padding:20px}
+  .email-form-field{ width:100%}
+}

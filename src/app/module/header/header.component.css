@@ -1,0 +1,73 @@
+.logo {
+  width: 6em;
+  height: 3em;
+  /* margin-top: 1rem; */
+}
+
+.header {
+  background: linear-gradient(90deg, var(--color-primaryDark ) 0%, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+  overflow: hidden;
+  height: 50px;
+  color: white;
+  font-family: Montserrat, "Montserrat", sans-serif;
+}
+
+.header-fixed {
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--color-primaryDark ) 0%, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+  top: 0;
+  height: 72px;
+  color: white;
+  font-family: Montserrat, "Montserrat", sans-serif;
+  position:fixed;
+  z-index: 9999;
+}
+
+.header-transparent {
+  background: transparent;
+  overflow: hidden;
+  top: 4px;
+  height: 50px;
+  color: white;
+  font-family: Montserrat, "Montserrat", sans-serif;
+  position:fixed;
+  z-index: 9999;
+}
+
+
+.sidenav-container{ height:auto!important}
+.responsive-menu {
+  background: linear-gradient(90deg, var(--color-primaryDark ) 0%, var(--color-primary) 10%, var(--color-primaryLight), var(--color-primaryInactive));
+}
+@media screen and (max-width: 1500px) {
+  .header {
+    height: 50px;
+  }
+  .play-icon {
+    margin-left: 53% !important;
+  }
+}
+
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-items button {
+  border-radius: 30px;
+  font-family: Montserrat, "Montserrat", sans-serif;
+}
+.menu-items button:nth-child(1) {
+  margin-right: 1em;
+  background-color: white;
+  color: var(--color-primary);
+}
+.menu-items button:nth-child(2){
+  border: solid 1px white;
+}
+.menu-items mat-icon{
+  margin-right: 10px;
+}
+
+.menu-icon {
+  color: white;
+}

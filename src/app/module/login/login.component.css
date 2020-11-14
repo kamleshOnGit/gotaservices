@@ -1,0 +1,99 @@
+.login-left {
+  width: auto;
+  height: auto;
+}
+
+.audio-icon {
+  width: 15em;
+  height: 10em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+
+.login-logo {
+  width: 15em;
+  height: 4em;
+  padding-bottom: 1.5em;
+}
+
+.login-form {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: var(--color-tertiary);
+  font-family: Montserrat, "Montserrat", sans-serif;
+}
+
+p{
+  color: var(--color-tertiary);
+}
+
+.user-connection-type-selected .button-type:focus {
+  border: var(--color-tertiary) solid 2px;
+}
+
+.login-input {
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px #3b3e4e45;
+  cursor: pointer;
+  line-height: 3em;
+  text-align: left;
+}
+
+.rememberBtn {
+  height: 1em;
+}
+
+.default-button-style {
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px #3b3e4e45;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 20px;
+  cursor: pointer;
+  width: 15em;
+  line-height: 3em;
+}
+
+.social-connect {
+  width: 3em;
+  height: 3em;
+}
+
+.google {
+  border: red solid 1px;
+}
+.facebook {
+  border: blue solid 1px;
+}
+
+.login-register {
+  border: var(--color-tertiary) solid 1px;
+  color: var(--color-tertiary) !important;
+}
+.login-connect {
+  color: #ffffff !important;
+  border: var(--color-tertiary) solid 1px;
+  background-color: var(--color-tertiary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-tertiary);
+}
+a:active {
+  color: var(--color-tertiary);
+}
+
+.last-line {
+  padding-top: 5%;
+  line-height: 2em;
+}
+
+u{
+  color: var(--color-tertiary);
+}
